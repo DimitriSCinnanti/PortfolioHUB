@@ -1,38 +1,44 @@
-# 2. Uso do Google Gemini na implantação
+# Registro de uso do Google Gemini — PortfolioHUB
 
-O enunciado exige **utilização efetiva do Google Gemini** como apoio no projeto. A documentação abaixo é um guia de execução, **não é um registro de interações já realizadas**.
+**Projeto:** Implantação PortfolioHUB + IA Gemini — Bootcamp I  
+**Estudante:** Dimitri Sofoulis Cinnanti — Ciência da Computação, UniCEUB  
+**Data do registro:** 25/10/2026  
+**Site:** https://dimitriscinnanti.github.io/PortfolioHUB/  
+**Repositório:** https://github.com/DimitriSCinnanti/PortfolioHUB
 
-## Como documentar seu uso
+## Objetivo da consulta
 
-1. Acesse https://gemini.google.com/ com sua conta.
-2. Execute alguns dos prompts sugeridos a seguir, anexando contexto ou trechos do código do PortfolioHUB sem dados sensíveis.
-3. Revise as respostas e só aplique recomendações tecnicamente adequadas.
-4. Tire captura da conversa e registre o que foi sugerido, o que aproveitou e por que.
-5. Insira no relatório PDF somente interações e mudanças realmente ocorridas.
+O Google Gemini foi utilizado como ferramenta de apoio para revisar a implantação do PortfolioHUB, especialmente a integração com GitHub, políticas de segurança, controle de acesso e testes. O objetivo foi receber recomendações, comparar cada uma com o projeto real e registrar decisões técnicas.
 
-## Prompts sugeridos
+## Solicitação feita ao Gemini
 
-**Planejamento:**
+Foi solicitada uma revisão da implantação com base nos links do site e do repositório, pedindo três melhorias ou verificações importantes e seus motivos, distinguindo o que a ferramenta verificou daquilo que estava apenas recomendando. A resposta da ferramenta foi copiada e fornecida para análise durante a preparação do relatório.
 
-> Estou implantando um PortfolioHUB estático em HTML, CSS e JavaScript com GitHub Pages. Monte um checklist objetivo de planejamento, versionamento, segurança, testes e publicação para esse projeto acadêmico.
+## Síntese das três recomendações recebidas
 
-**Revisão de segurança:**
+| Recomendação do Gemini | Análise e decisão |
+| --- | --- |
+| Conferir se existem segredos ou tokens expostos nos arquivos e no histórico do Git | O arquivo público `assets/app.js` foi conferido: acessa a API pública do GitHub por HTTPS sem token embutido. Isso não comprova a ausência de segredos em todo o histórico. A revisão completa e o Secret Scanning permanecem como recomendações. |
+| Proteger o acesso a eventual painel administrativo, validando autenticação e autorização no servidor | Não se aplica à versão atual: o PortfolioHUB é um site estático, sem login, painel administrativo ou backend. O controle de edição dos arquivos é feito nas permissões do próprio GitHub. |
+| Implementar pipeline de testes automatizados por GitHub Actions, com status no README | Considerada uma melhoria futura. O projeto teve 8 testes locais controlados, mas não possui workflow de CI/CD publicado. Não foi declarado como implementado. |
 
-> Revise esta estratégia: uma página estática usa fetch para consultar repositórios públicos da API GitHub e exibe dados usando textContent. Quais os riscos, boas práticas e limitações? Não pressuponha que exista backend ou login.
+## O que foi efetivamente observado
 
-**Testes:**
+1. O projeto está publicado pelo GitHub Pages, conforme capturas do estudante.
+2. O código `assets/app.js` consulta apenas repositórios públicos do GitHub e não precisa de chave de API para essa funcionalidade.
+3. A apresentação dos campos de repositórios utiliza `textContent`, e os links de nova aba usam `noopener noreferrer`.
+4. O site não possui painel administrativo, login próprio ou banco de dados.
+5. Oito testes locais com respostas simuladas da API foram registrados separadamente; eles não substituem uma revisão completa da produção.
 
-> Sugira testes manuais para um portfólio responsivo que filtra repositórios, consulta a API pública do GitHub e exibe uma mensagem de contingência quando a API falha.
+## O que ainda precisa de comprovação
 
-**Revisão de acessibilidade:**
+- Conferência das configurações de 2FA, colaboradores, rulesets e eventuais alertas de segurança na conta GitHub.
+- Verificação de segredos em todo o histórico de commits.
+- Testes manuais adicionais no endereço publicado.
+- Caso exigido, anexar uma captura de tela da conversa original no Gemini.
 
-> Analise a navegação por teclado, os rótulos, o contraste e a usabilidade móvel de um portfólio estático. Sugira correções e explique como validá-las no navegador.
+## Conclusão
 
-## Registro da atividade (preencher após o uso)
+O Gemini atuou como apoio na análise da implantação. A recomendação sobre segredos ajudou a orientar a revisão do código; a sugestão sobre painel administrativo foi considerada não aplicável; e a proposta de GitHub Actions foi documentada como melhoria futura. A aplicação **não possui integração à API Gemini**, nem afirma executar testes ou autenticação via Gemini.
 
-| Data | Prompt executado | Sugestão recebida | O que implementei / decidi | Evidência |
-|---|---|---|---|---|
-|  |  |  |  |  |
-|  |  |  |  |  |
-
-**Observação:** o Gemini é usado como ferramenta de assistência. Este projeto não inclui chamadas à API Gemini dentro do site e não armazena chave do Gemini no frontend.
+**Evidência:** resposta textual do Gemini fornecida pelo estudante em 25/10/2026; o registro não substitui a captura da conversa, caso ela seja necessária na avaliação.

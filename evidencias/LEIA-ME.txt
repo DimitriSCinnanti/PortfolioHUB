@@ -1,0 +1,10 @@
+Salve aqui evidências REAIS da sua implantação antes de entregar:
+01-github-repositorio.png
+02-configuracao-permissoes.png
+03-github-pages-publicado.png
+04-portfolio-funcionando.png
+05-gemini-conversa.png
+06-testes.png
+07-google-docs-ou-drive.png (caso tenha usado)
+
+Não marque testes não executados como realizados e não invente capturas de tela.

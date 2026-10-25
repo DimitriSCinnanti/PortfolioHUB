@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PortfolioHUB de Dimitri Cinnanti: projetos, estudos e repositórios públicos de desenvolvimento de software, integrados ao GitHub.">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>PortfolioHUB | Dimitri Cinnanti</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#principal">Pular para o conteúdo</a>
+  <div class="glow glow-one" aria-hidden="true"></div><div class="glow glow-two" aria-hidden="true"></div>
+  <header class="topbar container">
+    <a class="brand" href="#inicio" aria-label="PortfolioHUB - início"><span class="brand-mark">P<span>H</span></span><span>Portfolio<span class="brand-accent">HUB</span></span></a>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a><a href="#projetos">Projetos</a><a href="#processo">Processo</a>
+    </nav>
+    <a class="nav-action" href="https://github.com/DimitriSCinnanti" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="principal">
+    <section id="inicio" class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse" aria-hidden="true"></span> Portfólio de desenvolvimento e estudos</div>
+        <h1>Projetos que saem <span class="gradient-text">do código</span> para o mundo real.</h1>
+        <p class="intro">Sou Dimitri Cinnanti, estudante de Ciência da Computação. Este é meu espaço para reunir experiências em programação, compartilhar projetos e acompanhar minha evolução com Git e GitHub.</p>
+        <div class="hero-actions"><a class="btn primary" href="#projetos">Explorar projetos <span aria-hidden="true">↘</span></a><a class="btn secondary" href="https://www.linkedin.com/in/dimitri-cinnanti-8b5918444" target="_blank" rel="noopener noreferrer">Ver LinkedIn <span aria-hidden="true">↗</span></a></div>
+        <div class="stack" aria-label="Tecnologias de interesse"><span>Java</span><span>Go</span><span>Python</span><span>Vue.js</span><span>Git</span><span>MongoDB</span></div>
+      </div>
+      <aside class="hero-panel" aria-label="Resumo do portfólio">
+        <div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-file">portfoliohub / overview</span></div>
+        <div class="panel-body">
+          <span class="mini-label">SELECIONADO PARA O PORTFÓLIO</span>
+          <div class="code-line"><span class="code-purple">const</span> developer <span class="code-blue">=</span> {</div>
+          <div class="code-line indent">nome: <span class="code-green">"Dimitri Cinnanti"</span>,</div>
+          <div class="code-line indent">foco: <span class="code-green">"Software & Web"</span>,</div>
+          <div class="code-line indent">controleDeVersao: <span class="code-green">"GitHub"</span>,</div>
+          <div class="code-line indent">aprendizado: <span class="code-orange">true</span></div>
+          <div class="code-line">};</div>
+          <div class="panel-divider"></div>
+          <div class="panel-metrics"><div><strong id="repo-total">—</strong><span>repositórios exibidos</span></div><div><strong>Git</strong><span>versionamento</span></div></div>
+        </div>
+      </aside>
+    </section>
+    <section id="sobre" class="section container">
+      <div class="section-head"><div><span class="kicker">01 / APRESENTAÇÃO</span><h2>Sobre o PortfolioHUB</h2></div><p>Uma vitrine pública de projetos e um exemplo prático de integração, documentação e boas práticas de segurança.</p></div>
+      <div class="features">
+        <article class="feature"><span class="feature-icon">⌘</span><h3>Integração real</h3><p>Consulta a API pública do GitHub para listar repositórios do meu perfil sem armazenar senhas ou tokens.</p></article>
+        <article class="feature"><span class="feature-icon">◇</span><h3>Versionamento</h3><p>Organização do código em um repositório dedicado e histórico de alterações por meio de commits.</p></article>
+        <article class="feature"><span class="feature-icon">▣</span><h3>Documentação</h3><p>Registro do planejamento, testes, controles de acesso e apoio do Google Gemini na implantação.</p></article>
+      </div>
+    </section>
+    <section id="projetos" class="section container">
+      <div class="section-head"><div><span class="kicker">02 / REPOSITÓRIOS</span><h2>Projetos no GitHub</h2></div><p>Dados públicos carregados do GitHub. Cada cartão leva diretamente ao repositório correspondente.</p></div>
+      <div class="projects-toolbar"><div class="filter-group" role="group" aria-label="Filtrar repositórios"><button class="filter active" data-filter="todos" type="button" aria-pressed="true">Todos</button><button class="filter" data-filter="destaques" type="button" aria-pressed="false">Destaques</button><button class="filter" data-filter="web" type="button" aria-pressed="false">Web</button><button class="filter" data-filter="outros" type="button" aria-pressed="false">Outros</button></div><label class="search-box"><span class="sr-only">Buscar repositório</span><span aria-hidden="true">⌕</span><input type="search" id="project-search" placeholder="Buscar projeto..." autocomplete="off"></label></div>
+      <div class="api-status" id="api-status" role="status" aria-live="polite">Carregando repositórios públicos...</div>
+      <div class="project-grid" id="project-grid" aria-live="polite"></div>
+      <div class="more-projects"><a href="https://github.com/DimitriSCinnanti?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos os repositórios no GitHub <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <section id="processo" class="section container">
+      <div class="section-head"><div><span class="kicker">03 / IMPLANTAÇÃO</span><h2>Como o projeto funciona</h2></div><p>Arquitetura simples, compatível com hospedagem estática e sem chaves de API expostas no navegador.</p></div>
+      <div class="workflow"><div class="workflow-card"><small>PASSO 01</small><strong>GitHub</strong><span>Repositórios públicos</span></div><div class="workflow-arrow" aria-hidden="true">→</div><div class="workflow-card"><small>PASSO 02</small><strong>GitHub API</strong><span>Leitura de dados públicos</span></div><div class="workflow-arrow" aria-hidden="true">→</div><div class="workflow-card"><small>PASSO 03</small><strong>PortfolioHUB</strong><span>Exibição e filtros</span></div></div>
+      <div class="process-note"><strong>Segurança e acesso:</strong> o site exibe apenas conteúdos públicos. Permissões de escrita e colaboração são administradas no próprio GitHub. O Google Gemini está previsto como apoio ao desenvolvimento e à revisão; não deve receber credenciais.</div>
+    </section>
+    <section class="contact container"><div><span class="kicker">CONTATO E CONEXÕES</span><h2>Vamos conversar sobre tecnologia?</h2><p>Você pode acompanhar meus projetos ou me encontrar no LinkedIn.</p></div><div class="contact-actions"><a class="btn primary" href="https://github.com/DimitriSCinnanti" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a class="btn secondary" href="https://www.linkedin.com/in/dimitri-cinnanti-8b5918444" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn secondary" id="workspace-doc-link" hidden href="#" target="_blank" rel="noopener noreferrer">Documentação Google ↗</a></div></section>
+  </main>
+  <footer class="footer container"><span>© <span id="year">2026</span> PortfolioHUB • Dimitri Cinnanti</span><span>Desenvolvido com HTML, CSS, JavaScript e GitHub API</span></footer>
+</body>
+</html>

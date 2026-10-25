@@ -1,0 +1,17 @@
+PORTFOLIOHUB - GUIA RÁPIDO DE ENTREGA
+
+1. Leia o README.md e crie um repositório público chamado PortfolioHUB no GitHub.
+2. Envie esta pasta (arquivos da raiz e subpastas) para o repositório usando Git.
+3. Ative Settings > Pages > Deploy from a branch > main / (root).
+4. Abra e teste o link publicado. Registre capturas reais.
+5. Acesse o Gemini e realize prompts de planejamento, segurança ou testes; salve evidência.
+6. Revise segurança e permissões do GitHub e registre apenas configurações verificadas.
+7. Preencha docs/TESTES.md com resultados reais.
+8. Grave vídeo ~5 min com o roteiro docs/ROTEIRO_VIDEO.md e publique no YouTube.
+9. Use docs/RELATORIO_EDITAVEL.md e o PDF modelo separado para preparar o PDF FINAL com
+   links reais, capturas e explicação dos passos realizados.
+10. Entregue o PDF individual até 25/10/2026 às 23h55.
+
+ATENÇÃO: Este pacote foi preparado como ponto de partida. Nenhum repositório novo foi
+criado pelo assistente, nenhuma publicação foi efetuada e não foram realizados
+os passos externos de Gemini/Google Workspace em sua conta.
